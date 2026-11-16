@@ -38,7 +38,7 @@ resource "aws_eks_cluster" "eks" {
   vpc_config {
     subnet_ids              = var.subnet_ids
     endpoint_public_access  = true
-    endpoint_private_access = false
+    endpoint_private_access = true
     public_access_cidrs     = ["49.43.231.229/32"]
   }
 
