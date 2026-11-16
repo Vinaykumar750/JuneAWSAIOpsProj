@@ -34,7 +34,7 @@ on:
         default: plan
       confirm:
         description: 'Type "destroy" to confirm a destroy'
-        required: false
+        required: true
         default: ""
 
 permissions:
