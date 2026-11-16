@@ -39,6 +39,7 @@ resource "aws_eks_cluster" "eks" {
     subnet_ids              = var.subnet_ids
     endpoint_public_access  = true
     endpoint_private_access = false
+    public_access_cidrs     = ["49.43.231.229/32"]
   }
 
   depends_on = [

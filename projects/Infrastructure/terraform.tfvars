@@ -19,7 +19,7 @@ instance_types = ["m7i-flex.large"]
 capacity_type  = "ON_DEMAND"
 desired_size   = 2
 min_size       = 2
-max_size       = 3
+max_size       = 2
 disk_size      = 30
 
 repositories = [
@@ -37,12 +37,12 @@ repositories = [
 # EDIT: add YOUR IAM user/role so kubectl works from your laptop.
 #   Find it with:  aws sts get-caller-identity --query Arn --output text
 cluster_admin_arns = [
-  "arn:aws:iam::123456789012:user/your-iam-user",
+  "arn:aws:iam::710514263633:user/dveops-admin-vinay",
 ]
 
 # ---- GitOps -------------------------------------------------------------------
 # EDIT for your fork: Argo CD deploys gitops/ from this repository + branch.
-gitops_repo_url = "https://github.com/YOUR-GITHUB-USER/YOUR-REPO.git"
+gitops_repo_url = "https://github.com/Vinaykumar750/JuneAWSAIOpsProj.git"
 gitops_revision = "main"
 
 # ---- DNS (optional) -----------------------------------------------------------

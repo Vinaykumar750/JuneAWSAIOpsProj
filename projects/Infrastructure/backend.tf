@@ -7,6 +7,7 @@
 # so a laptop apply and a pipeline apply can never run at the same time.
 terraform {
   backend "s3" {
+    bucket       = "telugu-pickles-tfstate-710514263633"
     key          = "telugu-pickles/infrastructure.tfstate"
     region       = "us-east-1"
     encrypt      = true
